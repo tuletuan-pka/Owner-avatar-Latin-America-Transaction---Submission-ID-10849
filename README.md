@@ -4,13 +4,20 @@ This repository contains the 3D electromagnetic simulation files and the corresp
 
 ## 📁 Repository Structure
 
-* **`mimo_f.cst`**: The primary 3D simulation project file. This contains the MIMO antenna design, material properties, boundary conditions, and solver setups.
-* **`Data for simulation/`**: A directory containing the extracted numerical data used to plot the results in the associated documentation or research paper.
-* **`README.md`**: Project overview and instructions (this file).
+*   **`README.md`**: Project overview and file directory descriptions (this file).
+
+### Simulation Files (`.cst`)
+The repository includes several CST Studio Suite project files representing different stages of the antenna design process:
+
+*   **`Single_element.cst`**: The baseline 3D simulation for the single antenna element.
+*   **`Single element_coaxial.cst`**: The single antenna element design utilizing a coaxial feeding mechanism.
+*   **`4phantu_f.cst`**: The 3D simulation file for the 4-element antenna array.
+*   **`feeding_f.cst`**: The simulation project detailing the feeding network designed for the array/MIMO system.
+*   **`mimo_f.cst`**: The complete, integrated Multiple-Input Multiple-Output (MIMO) antenna system simulation.
 
 ## 📊 Data for Simulation
 
-The `Data for simulation` folder contains Excel (`.xlsx`) files. Each file corresponds to a specific figure in the main text/paper, allowing for exact reproduction of our plotted results (such as S-parameters, radiation patterns, efficiency, or ECC). 
+*   **`Data for simulation/`**: A directory containing the extracted numerical data (Excel `.xlsx` format) used to plot the results in the associated documentation or research paper (e.g., S-parameters, radiation patterns, efficiency, and ECC).
 
 Included figure data:
 * **Figure 3**: `Fig3a.xlsx`, `Fig3b.xlsx`
